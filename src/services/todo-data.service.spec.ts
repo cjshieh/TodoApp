@@ -1,6 +1,6 @@
 import { TestBed, async, inject } from '@angular/core/testing';
 
-import { Todo } from "./todo";
+import { Todo } from "../shared/todo";
 import { TodoDataService } from './todo-data.service';
 
 describe('TodoDataService', () => {
