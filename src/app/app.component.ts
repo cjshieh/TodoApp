@@ -14,6 +14,10 @@ export class AppComponent {
   constructor(private todoDataService: TodoDataService) {}
 
   addTodo() {
+    if(!this.newTodo.title) {
+      alert("You must write something!");
+      return;
+    }
     this.todoDataService.addTodo(this.newTodo);
     this.newTodo = new Todo();
   }
